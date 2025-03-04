@@ -50,14 +50,29 @@
             bindings = <&mkp MCLK>;
             key-positions = <18 20>;
         };
+
+        dclick {
+            bindings = <&dclick>;
+            key-positions = <18 19 20>;
+        };
+
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <17 18>;
+        };
+
+        forward {
+            bindings = <&mkp MB5>;
+            key-positions = <5 6>;
+        };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        dclick: dclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &mkp LCLK>;
+            label = "DCLICK";
         };
     };
 
