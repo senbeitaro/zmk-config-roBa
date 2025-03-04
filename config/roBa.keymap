@@ -77,10 +77,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E           &kp R                        &kp T                                                        &kp Y        &kp U  &lt 5 I              &kp O          &kp P
-&kp A             &kp S         &kp D           &kp F                        &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &lt 5 K              &kp L          &kp MINUS
-&mt LEFT_SHIFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V                        &kp B        &kp RIGHT_BRACKET                &kp BACKSLASH  &kp N        &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RSHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                             &kp DEL
+&kp Q             &kp W         &kp E           &kp R                        &kp T                                              &kp Y        &kp U  &lt 5 I              &kp O          &kp P
+&kp A             &kp S         &kp D           &kp F                        &kp G        &kp LS(LG(S))          &kp MINUS      &kp H        &kp J  &lt 5 K              &kp L          &kp MINUS
+&mt LEFT_SHIFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V                        &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N        &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RSHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN       &kp BACKSPACE  &lt 2 ENTER                                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -98,8 +98,8 @@
         NUM {
             bindings = <
 &kp N1     &kp N2     &kp N3         &kp N4  &kp N5                                           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_BRACKET
-&kp N6     &kp N7     &kp N8         &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &none       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(MINUS)
-&kp MINUS  &kp EQUAL  &kp LS(EQUAL)  &none   &none   &kp LS(N8)                   &kp LS(N9)  &none          &none           &kp SEMICOLON   &kp COLON        &kp BACKSLASH
+&kp N6     &kp N7     &kp N8         &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &none       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(INT_RO)
+&kp MINUS  &kp EQUAL  &kp LS(EQUAL)  &none   &none   &kp LS(N8)                   &kp LS(N9)  &none          &none           &kp SEMICOLON   &kp COLON        &kp INT_RO
 &trans     &trans     &trans         &trans  &trans  &trans                       &trans      &trans                                                          &kp PIPE
             >;
         };
