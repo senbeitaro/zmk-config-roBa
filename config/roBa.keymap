@@ -78,7 +78,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E           &kp R                        &kp T                                                  &kp Y        &kp U  &lt 5 I              &kp O          &kp P
-&kp A             &kp S         &kp D           &kp F                        &kp G        &kp LS(LG(S))            &kp MINUS        &kp H        &kp J  &lt 5 K              &kp L          &kp MINUS
+&kp A             &kp S         &kp D           &kp F                        &kp G        &kp LS(LG(S))            &mo 6            &kp H        &kp J  &lt 5 K              &kp L          &kp MINUS
 &mt LEFT_SHIFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V                        &kp B        &lt 1 RIGHT_BRACKET      &lt 1 BACKSLASH  &kp N        &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RSHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN         &kp BACKSPACE    &lt 2 ENTER                                             &kp DEL
             >;
@@ -106,10 +106,10 @@
 
         FUNCTION_NUM {
             bindings = <
-&kp F1     &kp F2        &kp F3  &kp F4       &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &none
-&kp F6     &kp F7        &kp F8  &kp F9       &kp F10    &none                      &none              &none          &kp N4  &kp N5  &kp N6  &none
-&kp F11    &kp F12       &none   &none        &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &none
-&kp LCTRL  &kp LEFT_WIN  &none   &kp LS(TAB)  &kp SPACE  &kp TAB                    &kp BACKSPACE      &kp ENTER                              &none
+&kp F1     &kp F2        &kp F3  &kp F4       &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &kp LS(SEMICOLON)
+&kp F6     &kp F7        &kp F8  &kp F9       &kp F10    &none                      &none              &none          &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F11    &kp F12       &none   &none        &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &kp LS(SQT)
+&kp LCTRL  &kp LEFT_WIN  &none   &kp LS(TAB)  &kp SPACE  &kp TAB                    &kp BACKSPACE      &kp ENTER                              &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
