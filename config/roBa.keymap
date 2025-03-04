@@ -97,10 +97,10 @@
 
         NUM {
             bindings = <
-&kp N1     &kp N2     &kp N3     &kp N4  &kp N5                                           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp RIGHT_PARENTHESIS
-&kp N6     &kp N7     &kp N8     &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &none       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(MINUS)
-&kp MINUS  &kp EQUAL  &kp GRAVE  &none   &none   &kp LS(N8)                   &kp LS(N9)  &none          &none           &kp SEMICOLON   &kp COLON        &kp BACKSLASH
-&trans     &trans     &trans     &trans  &trans  &trans                       &trans      &trans                                                          &kp PIPE
+&kp N1     &kp N2     &kp N3         &kp N4  &kp N5                                           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp RIGHT_PARENTHESIS
+&kp N6     &kp N7     &kp N8         &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &none       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(MINUS)
+&kp MINUS  &kp EQUAL  &kp LS(EQUAL)  &none   &none   &kp LS(N8)                   &kp LS(N9)  &none          &none           &kp SEMICOLON   &kp COLON        &kp BACKSLASH
+&trans     &trans     &trans         &trans  &trans  &trans                       &trans      &trans                                                          &kp PIPE
             >;
         };
 
