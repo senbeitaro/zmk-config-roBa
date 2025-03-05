@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -99,7 +98,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -138,13 +139,13 @@
 
         FUNCTION_NUM {
             bindings = <
-&kp F1     &kp F2        &kp F3  &kp F4       &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &kp LS(SEMICOLON)
-&kp F6     &kp F7        &kp F8  &kp F9       &kp F10    &none                      &none              &none          &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp F11    &kp F12       &none   &none        &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &kp LS(SQT)
-&kp LCTRL  &kp LEFT_WIN  &none   &kp LS(TAB)  &kp SPACE  &kp TAB                    &kp BACKSPACE      &kp ENTER                              &kp SLASH
+&kp F1     &kp F2        &kp F3  &kp F4  &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &kp LS(SEMICOLON)
+&kp F6     &kp F7        &kp F8  &kp F9  &kp F10    &none                      &none              &none          &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F11    &kp F12       &none   &none   &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &kp LS(SQT)
+&kp LCTRL  &kp LEFT_WIN  &none   &none   &kp SPACE  &none                      &kp BACKSPACE      &kp ENTER                              &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
         };
 
         MOUSE {
