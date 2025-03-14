@@ -117,7 +117,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN         &kp BACKSPACE    &lt 2 ENTER                                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         KIGOU {
@@ -146,7 +146,7 @@
 &kp LCTRL  &kp LEFT_WIN  &none   &none   &kp SPACE  &none                      &kp BACKSPACE      &kp ENTER                              &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
 
         MOUSE {
