@@ -9,6 +9,8 @@
 #define NUM 6
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
+#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -99,9 +101,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
             // 追加: スクロールのタップ時間を設定 (20ms)
-
             tap-ms = <20>;
         };
     };
@@ -117,7 +117,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN         &kp BACKSPACE    &lt 2 ENTER                                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         KIGOU {
