@@ -151,7 +151,7 @@
         FUNCTION_NUM {
             bindings = <
 &kp F1     &kp F2        &kp F3  &kp F4  &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &kp LS(SEMICOLON)
-&kp F6     &kp F7        &kp F8  &kp F9  &kp F10    &none                      &none              &none          &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F6     &kp F7        &kp F8  &kp F9  &kp F10    &none                      &kp LS(TAB)        &kp TAB        &kp N4  &kp N5  &kp N6  &kp MINUS
 &kp F11    &kp F12       &none   &none   &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &kp LS(SQT)
 &kp LCTRL  &kp LEFT_WIN  &none   &none   &kp SPACE  &none                      &kp BACKSPACE      &kp ENTER                              &kp SLASH
             >;
