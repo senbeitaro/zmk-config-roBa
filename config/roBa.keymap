@@ -7,7 +7,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -68,6 +67,16 @@
             bindings = <&mkp MB5>;
             key-positions = <5 6>;
         };
+
+        curve_L {
+            bindings = <&kp LS(NUMBER_8)>;
+            key-positions = <14 4>;
+        };
+
+        curve_R {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <5 17>;
+        };
     };
 
     macros {
@@ -100,7 +109,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
