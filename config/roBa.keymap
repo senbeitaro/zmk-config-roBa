@@ -78,7 +78,7 @@
             key-positions = <5 17>;
         };
 
-        dclick {
+        dclick2 {
             bindings = <&dclick>;
             key-positions = <18 6>;
         };
