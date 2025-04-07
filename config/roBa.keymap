@@ -98,6 +98,20 @@
             bindings = <&mkp LCLK &mkp LCLK>;
             label = "DCLICK";
         };
+
+        curve_macro: curve_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT5 &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "CURVE_MACRO";
+        };
+
+        keybracket_macro: keycurve_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT4 &kp RBKT &kp BACKSLASH &kp ENTER &kp LEFT_ARROW>;
+            label = "KEYCURVE_MACRO";
+        };
     };
 
     behaviors {
@@ -146,17 +160,17 @@
 
         NUM_ARROW {
             bindings = <
-&kp N1                &kp N2           &kp N3                      &kp N4  &kp N5                                           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_BRACKET
-&kp N6                &kp N7           &kp N8                      &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &none       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(INT_RO)
-&mt LEFT_SHIFT MINUS  &mt LCTRL EQUAL  &mt LS(LEFT_ALT) LS(EQUAL)  &none   &none   &kp LS(N8)                   &kp LS(N9)  &none          &none           &kp SEMICOLON   &kp SQT          &kp INT_RO
-&trans                &trans           &trans                      &trans  &trans  &trans                       &trans      &trans                                                          &kp LS(INTERNATIONAL_3)
+&kp N1                &kp N2           &kp N3                      &kp N4  &kp N5                                             &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_BRACKET
+&kp N6                &kp N7           &kp N8                      &kp N9  &kp N0  &kp LC(LA(KP_NUMBER_0))      &curve_macro  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(INT_RO)
+&mt LEFT_SHIFT MINUS  &mt LCTRL EQUAL  &mt LS(LEFT_ALT) LS(EQUAL)  &none   &none   &kp LS(N8)                   &kp LS(N9)    &none          &none           &kp SEMICOLON   &kp SQT          &kp INT_RO
+&trans                &trans           &trans                      &trans  &trans  &trans                       &trans        &trans                                                          &kp LS(INTERNATIONAL_3)
             >;
         };
 
         FUNCTION_NUM {
             bindings = <
 &kp F1     &kp F2        &kp F3  &kp F4  &kp F5                                                   &kp LS(MINUS)  &kp N7  &kp N8  &kp N9  &kp LS(SEMICOLON)
-&kp F6     &kp F7        &kp F8  &kp F9  &kp F10    &none                      &kp LS(TAB)        &kp TAB        &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F6     &kp F7        &kp F8  &kp F9  &kp F10    &none                      &keybracket_macro  &kp TAB        &kp N4  &kp N5  &kp N6  &kp MINUS
 &kp F11    &kp F12       &none   &none   &none      &kp LS(RIGHT_BRACKET)      &kp LS(BACKSLASH)  &kp N0         &kp N1  &kp N2  &kp N3  &kp LS(SQT)
 &kp LCTRL  &kp LEFT_WIN  &none   &none   &kp SPACE  &none                      &kp BACKSPACE      &kp ENTER                              &kp SLASH
             >;
