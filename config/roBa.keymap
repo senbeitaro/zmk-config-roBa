@@ -207,10 +207,10 @@
 
         Game {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans  &trans    &trans     &trans      &trans
-&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &mkp MB1  &mkp MB3   &mkp MB2    &trans
-&kp Z   &kp X   &kp C   &trans  &trans     &trans      &trans  &trans  &trans    &kp COMMA  &kp PERIOD  &kp SLASH
-&trans  &trans  &trans  &trans  &kp SPACE  &trans      &trans  &trans                                   &to 0
+&trans  &trans  &trans  &trans    &trans                           &trans  &trans    &trans     &trans      &trans
+&trans  &trans  &trans  &trans    &trans     &trans        &trans  &trans  &mkp MB1  &mkp MB3   &mkp MB2    &trans
+&kp Z   &kp X   &kp C   &trans    &trans     &trans        &trans  &trans  &trans    &kp COMMA  &kp PERIOD  &kp SLASH
+&trans  &trans  &trans  &mkp MB4  &kp SPACE  &mkp MB5      &trans  &trans                                   &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
