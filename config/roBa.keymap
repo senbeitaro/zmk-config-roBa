@@ -143,7 +143,7 @@
 &kp Q             &kp W         &kp E           &kp R                        &kp T                                                  &kp Y        &kp U  &lt 5 I              &kp O          &kp P
 &kp A             &kp S         &kp D           &kp F                        &kp G        &kp LS(LG(S))            &mo 6            &kp H        &kp J  &lt 5 K              &kp L          &kp MINUS
 &mt LEFT_SHIFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V                        &kp B        &lt 1 RIGHT_BRACKET      &lt 1 BACKSLASH  &kp N        &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RSHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN         &kp BACKSPACE    &lt 2 ENTER                                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT    &mt LEFT_SHIFT INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN         &kp BACKSPACE    &lt 2 ENTER                                             &to 7
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -183,7 +183,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &to 0
             >;
         };
 
@@ -205,15 +205,15 @@
             >;
         };
 
-        layer_7 {
+        Game {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &to 0
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
